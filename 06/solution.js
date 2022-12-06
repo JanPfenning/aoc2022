@@ -9,12 +9,10 @@ const duplicateInSlidingWindow = (slidingWindow) => {
     }
     return false;
 }
-
-input.forEach((_, index) => {
-    if(!duplicateInSlidingWindow(
-        Array.from(Array(14).keys()).map(element => input[index-element]))
-    )
-        console.log(index+1)
-})
+const windowSize = 14 //4
+const result = input.map((element, index) => [element, index]).filter((_, index) =>
+    index>windowSize && !duplicateInSlidingWindow(Array.from(Array(windowSize).keys()).map(element => input[index-element]))
+).map(([element, index]) => index+1)[0]
+console.log(result)
 //1779
 //2635
