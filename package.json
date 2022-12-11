@@ -2,7 +2,7 @@
   "name": "AdventOfCode",
   "version": "1.0.0",
   "dependencies": {
-    "@types/node": "^18.11.10"
-  },
-  "type": "module"
+    "@types/node": "^18.11.10",
+    "ts-node": "^10.9.1"
+  }
 }

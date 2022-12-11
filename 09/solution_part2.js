@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import {rotateGrid, transpose} from "../helper/utils.js";
+import {rotateGrid, transpose} from "../helper/utils.ts";
 
 const fileName = './input.txt';
 let fileContent = fs.readFileSync(fileName, 'utf8');
